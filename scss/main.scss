@@ -1,0 +1,287 @@
+/* Theme Variables */
+/* Color */
+$primary-color: #ff3946;
+$secondary-color: #314584;
+$section-bg: #fff;
+$font-color: #6b717f;
+$pure-white: #fff;
+$pure-dark: #000;
+/* Font-Family */
+$primary-font: 'Work Sans', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+/*Font-Size*/
+$body-font-size: 16px;
+
+/* Global Mixins */
+//box-shadow
+@mixin global-box-shadow($x-axis: 1px, $y-axis: 8px, $blur: 10px, $color: #eee) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+//Section spacing
+@mixin section-spacing($top: 70px, $bottom: 70px, $left: 0px, $right: 0px) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
+/* Global Extends */
+//Button
+%global-primary-button{
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 25px;
+    background: $primary-color;
+    border-color: $primary-color;
+}
+%global-section-spacing{
+    @include section-spacing();
+}
+.btn-primary,.btn-danger{
+    @extend %global-primary-button;
+}
+//Section Padding
+
+/* Theme Global CSS */
+body{
+    color: $font-color;
+    font-size: $body-font-size;
+    font-family: $primary-font;
+}
+p{
+    $color: $font-color;
+    font-size: $body-font-size;
+    font-family: $primary-font;
+}
+h1,h2,h3,h4,h5,h6{
+    color: $secondary-color;
+    font-family: $primary-font;
+}
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    color: $secondary-color;
+}
+h2{
+    font-size: 42px;
+    font-weight: 600;
+}
+h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+ul{
+    font-family: $primary-font;
+}
+a{
+    font-family: $primary-font;
+}
+
+/* Theme Main CSS */
+header{
+    background: $section-bg;
+}
+.navbar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .navbar-nav{
+        .nav-link{
+            color: $secondary-color;
+            font-weight: 600;
+            padding-right: 1rem;
+            padding-left: 1rem;
+
+            &:hover{
+                color: $primary-color;
+            }
+       }
+    }
+    .header-action-item{
+        display: flex;
+        align-items: center;
+
+        .nav{
+           a{
+               color: $secondary-color;
+               font-weight: 600;
+
+               &:hover{
+                   color: $primary-color;
+               }
+           } 
+        }
+        .btn-primary{
+            color: $primary-color;
+            background: $pure-white;
+            border-color: $pure-white;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 600;
+            @include global-box-shadow();
+
+            &::after{
+                content: "\f178";
+                font-family: fontAwesome;
+                position: relative;
+                left: 5px;
+            }
+            &:hover{
+                color: $pure-white;
+                border-color: $primary-color;
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+/* Intro Section */
+.intro-section{
+    @extend %global-section-spacing;
+    background: $section-bg url(../img/hero-illustration-img-bg.png) no-repeat right;
+    background-size: contain;
+}
+.intro-content{
+    h1{
+        line-height: 80px;  
+    }
+    p{
+        padding: 20px 0px;
+    }
+    .intro-buttons{
+        display: flex;
+        align-items: center;
+
+        .intro-optional-button{
+            color: $secondary-color;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+/* Service Section */
+.service-section{
+    background: $section-bg;
+    @extend %global-section-spacing;
+
+    h2{
+        line-height: 55px;
+    }
+    .desktop-button{
+        display: block;
+    }
+    .mobile-button{
+        display: none;
+    }
+    .btn-danger{
+        margin-top: 30px;
+    }
+    .card{
+        padding: 30px;
+        @include global-box-shadow();
+        background: $pure-white;
+
+        h5{
+            padding: 20px 0px;
+            line-height: 30px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Media Query For All devices */
+//Medium Device
+@media (max-width: 991.99px){
+    //Global Style
+    h2{
+        font-size: 35px;
+    }
+
+    //Header Section
+    .header-action-item{
+        display: none;
+    }
+
+    //Service Section
+    .service-section{
+        h2{
+            line-height: 45px;
+        }
+        .card{
+            padding: 10px;
+        }
+    }
+}
+
+//Small Device
+@media (max-width: 767.99px){
+     //Global Style
+     h2{
+        font-size: 32px;
+    }
+
+    //Service Section
+    .service-section{
+
+        h2{
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        .desktop-button{
+            display: none;
+        }
+        .mobile-button{
+            display: block;
+            text-align: center;
+            padding: 20px 0px;
+        }
+    }
+}
+
+//Mobile Device
+@media (max-width: 575.99px){
+    //Global Style
+
+    //Intro Section
+    .intro-section{
+
+        .intro-content{
+            text-align: center;
+
+            h1{
+                font-size: 50px;
+                line-height: 65px;
+            }
+            .intro-buttons{
+                justify-content: center;
+                padding-top: 20px;
+            }
+        }
+    }
+
+
+    //Service Section
+    .service-section{
+        
+        .card{
+            text-align: center;
+            margin: 15px 0px;
+        }
+    }
+}

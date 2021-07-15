@@ -4,16 +4,141 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Doom - Simple Agency Website</title>
+        <!-- Google Fonts 'WorkSans' -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,300&display=swap" rel="stylesheet">
         <!-- FontAwesome CSS File -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- Bootstrap CSS File -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- Theme Main CSS File -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
-        
+        <!-- Header Section Start -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <!-- Brand Logo -->
+                    <div class="navbar-brand">
+                        <a href="#">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <!-- Toggler Button -->
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Navigation Menu -->
+                    <div id="main-menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home.</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About us.</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Portfolio.</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog.</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact us.</a>
+                            </li>
+                        </ul>
+                        <div class="header-action-item">
+                            <ul class="nav">
+                                <li class="nav-item dropdown">
+                                    <a href="#" role="button" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">EN.</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">EN.</a>
+                                        <a href="#" class="dropdown-item">BN.</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-primary">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header Section End -->
 
+
+        <!-- Intro Section Start -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="intro-content">
+                            <h1>The Spirit of Digital Agency.</h1>
+                            <p>Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                            <!-- Intro Button -->
+                            <div class="intro-buttons">
+                                <a href="#" class="btn btn-danger">More About Us</a>
+                                <a href="#" class="intro-optional-button">Get in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-md-block col-md-6">
+                        <img src="img/hero-illustration-img.png" class="img-fluid" alt="Intor Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Intro Section End -->
+
+
+        <!-- Service Section Start -->
+        <section class="service-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2>Anything you need,we’ve <br> got you covered</h2>
+                        <!-- Service Desktop Button -->
+                        <div class="desktop-button">
+                            <a href="#" class="btn btn-danger">Get in Touch</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row gx-lg-5">
+                            <div class="col-sm-6 col-md-6">
+                                <!-- Service Item -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/service-item-img-01.png" alt="Service Item Image">
+                                        <h5 class="card-title">Web & Graphic Design</h5>
+                                        <p class="card-text">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="col-sm-6 col-md-6">
+                                <!-- Service Item -->
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="img/service-item-img-02.png" alt="Service Item Image">
+                                        <h5 class="card-title">Web & App Development</h5>
+                                        <p class="card-text pb-2">Vestibulum ac diam sit amet quam vehicula elementum amet est on dui. Nulla porttitor accumsan tincidunt.</p>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Service Mobile Button -->
+                    <div class="mobile-button">
+                        <a href="#" class="btn btn-danger">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service Secton End -->
 
 
 
