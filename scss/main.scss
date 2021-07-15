@@ -5,6 +5,8 @@ $secondary-color: #314584;
 $section-bg: #fff;
 $font-color: #6b717f;
 $pure-white: #fff;
+$soft-white: #f1eded;
+$gray-color: #d0d0d0;
 $pure-dark: #000;
 /* Font-Family */
 $primary-font: 'Work Sans', sans-serif;
@@ -188,6 +190,12 @@ header{
         padding: 30px;
         @include global-box-shadow();
         background: $pure-white;
+        border-color: $soft-white;
+        transition: 0.15s ease-in-out;
+
+        &:hover{
+            @include global-box-shadow(0, 0, 0, #eee)
+        }
 
         h5{
             padding: 20px 0px;
@@ -196,6 +204,39 @@ header{
         }
     }
 }
+
+/* About Section */
+.about-section{
+    background: $section-bg;
+    @extend %global-section-spacing;
+
+    .top-title{
+        color: $primary-color;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    p{
+        padding-top: 30px;
+    }
+    .arrow-icons{
+        display: flex;
+        align-items: center;
+        a{
+            color: $gray-color;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .fa-long-arrow-right{
+            color: $secondary-color;
+            font-size: 30px;
+            margin-left: 15px;
+        }
+    }
+}
+
+
+
+
 
 
 

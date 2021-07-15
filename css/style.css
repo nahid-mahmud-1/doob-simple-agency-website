@@ -13,7 +13,7 @@
   border-color: #ff3946;
 }
 
-.service-section, .intro-section {
+.about-section, .service-section, .intro-section {
   padding-top: 70px;
   padding-bottom: 70px;
   padding-left: 0px;
@@ -159,11 +159,43 @@ header {
   padding: 30px;
   box-shadow: 1px 8px 10px #eee;
   background: #fff;
+  border-color: #f1eded;
+  transition: 0.15s ease-in-out;
+}
+.service-section .card:hover {
+  box-shadow: 0 0 0 #eee;
 }
 .service-section .card h5 {
   padding: 20px 0px;
   line-height: 30px;
   margin-bottom: 0px;
+}
+
+/* About Section */
+.about-section {
+  background: #fff;
+}
+.about-section .top-title {
+  color: #ff3946;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.about-section p {
+  padding-top: 30px;
+}
+.about-section .arrow-icons {
+  display: flex;
+  align-items: center;
+}
+.about-section .arrow-icons a {
+  color: #d0d0d0;
+  text-decoration: none;
+  display: inline-block;
+}
+.about-section .arrow-icons .fa-long-arrow-right {
+  color: #314584;
+  font-size: 30px;
+  margin-left: 15px;
 }
 
 /* Media Query For All devices */
