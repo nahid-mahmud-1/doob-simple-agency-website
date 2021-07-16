@@ -420,6 +420,12 @@ footer .footer-copyright {
     font-size: 32px;
   }
 
+  .service-section, .about-section,
+.portfolio-section, .blog-section,
+.contact-section, footer {
+    padding: 55px 0px;
+  }
+
   .intro-section {
     text-align: center;
   }

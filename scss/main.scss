@@ -516,6 +516,12 @@ footer{
      h2{
         font-size: 32px;
     }
+    .service-section,.about-section,
+    .portfolio-section,.blog-section,
+    .contact-section,footer{
+        padding: 55px 0px;
+    }
+
     //Intro Section
     .intro-section{
         text-align: center;
