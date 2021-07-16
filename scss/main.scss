@@ -494,6 +494,13 @@ footer{
         }
     }
 
+    //Blog Section
+    .blog-section{
+        .blog-card{
+            padding: 12px;
+        }
+    }
+
 
 
 }
@@ -550,6 +557,27 @@ footer{
         }
     }
 
+    //Blog Section
+    .blog-section{
+        .top-title,h2{
+            text-align: center;
+        }
+        .blog-arrow-icons{
+            justify-content: center;
+        }
+        .blog-card{
+            .card-title{
+                padding: 5px 0px;
+            }
+        }
+    }
+
+    //Contact Section
+    .contact-section{
+        .top-title,h2{
+            text-align: center;
+        }
+    }
 
 
 }
@@ -589,6 +617,20 @@ footer{
     .portfolio-section{
         .portfolio-item-hover{
             padding: 45px;
+        }
+    }
+
+    //Blog Section
+    .blog-section{
+        .blog-card{
+            text-align: center;
+
+            .card-title{
+                padding: 5px 0px;
+            }
+            .card-icon{
+                justify-content: center;
+            }
         }
     }
 }

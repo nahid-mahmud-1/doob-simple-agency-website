@@ -407,6 +407,10 @@ footer .footer-copyright {
   .portfolio-section .hover-content p {
     font-size: 14px;
   }
+
+  .blog-section .blog-card {
+    padding: 12px;
+  }
 }
 @media (max-width: 767.99px) {
   h2 {
@@ -447,6 +451,20 @@ footer .footer-copyright {
   .portfolio-section .hover-content p {
     font-size: 14px;
   }
+
+  .blog-section .top-title, .blog-section h2 {
+    text-align: center;
+  }
+  .blog-section .blog-arrow-icons {
+    justify-content: center;
+  }
+  .blog-section .blog-card .card-title {
+    padding: 5px 0px;
+  }
+
+  .contact-section .top-title, .contact-section h2 {
+    text-align: center;
+  }
 }
 @media (max-width: 575.99px) {
   .intro-section .intro-content {
@@ -468,6 +486,16 @@ footer .footer-copyright {
 
   .portfolio-section .portfolio-item-hover {
     padding: 45px;
+  }
+
+  .blog-section .blog-card {
+    text-align: center;
+  }
+  .blog-section .blog-card .card-title {
+    padding: 5px 0px;
+  }
+  .blog-section .blog-card .card-icon {
+    justify-content: center;
   }
 }
 
