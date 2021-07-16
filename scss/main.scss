@@ -20,7 +20,7 @@ $body-font-size: 16px;
     box-shadow: $x-axis $y-axis $blur $color;
 }
 //Section spacing
-@mixin section-spacing($top: 70px, $bottom: 70px, $left: 0px, $right: 0px) {
+@mixin section-spacing($top: 80px, $bottom: 80px, $left: 0px, $right: 0px) {
     padding-top: $top;
     padding-bottom: $bottom;
     padding-left: $left;
@@ -169,9 +169,15 @@ header{
     }
 }
 
+.intro-section .img-fluid{
+    position: relative;
+    left: 10%;
+}
+
 /* Service Section */
 .service-section{
-    background: $section-bg;
+    background: $section-bg url(../img/section-left-bg-01.png) no-repeat left;
+    background-size: contain;
     @extend %global-section-spacing;
 
     h2{
@@ -207,7 +213,8 @@ header{
 
 /* About Section */
 .about-section{
-    background: $section-bg;
+    background: $section-bg url(../img/section-right-bg-01.png) no-repeat right;
+    background-size: contain;
     @extend %global-section-spacing;
 
     .top-title{
@@ -221,10 +228,19 @@ header{
     .arrow-icons{
         display: flex;
         align-items: center;
+        padding-top: 10px;
+
         a{
             color: $gray-color;
             text-decoration: none;
             display: inline-block;
+        }
+        i{
+            transition: 0.15s ease-in-out;
+
+            &:hover{
+                color: $primary-color
+            }
         }
         .fa-long-arrow-right{
             color: $secondary-color;
@@ -267,6 +283,11 @@ header{
         .card{
             padding: 10px;
         }
+    }
+
+    //About Section
+    .about-section p{
+        padding-top: 20px;
     }
 }
 

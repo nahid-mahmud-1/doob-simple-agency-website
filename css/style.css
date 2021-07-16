@@ -14,8 +14,8 @@
 }
 
 .about-section, .service-section, .intro-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -139,9 +139,15 @@ header {
   color: #ff3946;
 }
 
+.intro-section .img-fluid {
+  position: relative;
+  left: 10%;
+}
+
 /* Service Section */
 .service-section {
-  background: #fff;
+  background: #fff url(../img/section-left-bg-01.png) no-repeat left;
+  background-size: contain;
 }
 .service-section h2 {
   line-height: 55px;
@@ -173,7 +179,8 @@ header {
 
 /* About Section */
 .about-section {
-  background: #fff;
+  background: #fff url(../img/section-right-bg-01.png) no-repeat right;
+  background-size: contain;
 }
 .about-section .top-title {
   color: #ff3946;
@@ -186,11 +193,18 @@ header {
 .about-section .arrow-icons {
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 .about-section .arrow-icons a {
   color: #d0d0d0;
   text-decoration: none;
   display: inline-block;
+}
+.about-section .arrow-icons i {
+  transition: 0.15s ease-in-out;
+}
+.about-section .arrow-icons i:hover {
+  color: #ff3946;
 }
 .about-section .arrow-icons .fa-long-arrow-right {
   color: #314584;
@@ -213,6 +227,10 @@ header {
   }
   .service-section .card {
     padding: 10px;
+  }
+
+  .about-section p {
+    padding-top: 20px;
   }
 }
 @media (max-width: 767.99px) {
