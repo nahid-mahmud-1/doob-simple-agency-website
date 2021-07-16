@@ -1,0 +1,46 @@
+/* Footer Section */
+footer{
+    background: $secondary-color;
+    padding: 50px 0px;
+
+    .footer-title{
+        color: $pure-white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1rem 0rem;
+
+        a{
+            color: $pure-white;
+            text-decoration: none;
+        }
+    }
+
+    .nav{
+        .nav-link{
+            color: $pure-white;
+        }
+    }
+    .footer-copyright{
+        color: $soft-white;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 1rem 0rem;
+    }
+}
+.footer-social-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+
+    a{
+        color: $pure-white;
+        display: block;
+        margin: 0px 15px;
+        transition: 0.15s ease-in-out;
+        i{
+            font-size: 30px;
+        }
+    }
+}

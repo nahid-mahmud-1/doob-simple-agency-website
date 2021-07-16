@@ -1,0 +1,224 @@
+/* Media Query For All devices */
+//Medium Device
+@media (max-width: 991.99px){
+    //Global Style
+    h2{
+        font-size: 35px;
+    }
+
+    //Header Section
+    .navbar{
+        #main-menu{
+            padding-top: 20px;
+        }
+        .header-action-item{
+            display: none;
+        }
+    }
+
+    //Service Section
+    .service-section{
+        h2{
+            line-height: 45px;
+        }
+        .card{
+            padding: 10px;
+        }
+    }
+
+    //About Section
+    .about-section{
+        h2{
+            line-height: 45px;
+        }
+        p{
+            padding-top: 20px;
+        }
+        
+    }
+
+    //Portfolio Section
+    .portfolio-section{
+        h2{
+            line-height: 45px;
+        }
+        .portfolio-item-hover{
+            padding: 15px;
+        }
+        .hover-content{
+            h4{
+                padding: 10px 0px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    //Blog Section
+    .blog-section{
+        .blog-card{
+            padding: 12px;
+        }
+    }
+
+
+
+}
+
+//Small Device
+@media (max-width: 767.99px){
+     //Global Style
+     h2{
+        font-size: 32px;
+    }
+    .service-section,.about-section,
+    .portfolio-section,.blog-section,
+    .contact-section,footer{
+        padding: 35px 0px;
+    }
+
+    //Intro Section
+    .intro-section{
+        text-align: center;
+        h1{
+            font-size: 55px;
+            line-height: 70px;
+        }
+        .intro-buttons{
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a{
+                display: block;
+            }
+
+            .intro-optional-button{
+                width: 100%;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    //Service Section
+    .service-section{
+
+        h2{
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        .desktop-button{
+            display: none;
+        }
+        .mobile-button{
+            display: block;
+            text-align: center;
+            padding: 20px 0px;
+        }
+    }
+
+    //About Section
+    .about-content{
+        text-align: center;
+        padding: 3rem 0rem;
+    }
+    .arrow-icons{
+        justify-content: center;
+    }
+
+    //Portfolio Section
+    .portfolio-section{
+        h2{
+            text-align: center;
+        }
+
+        .portfolio-item-hover{
+            padding: 20px;
+        }
+        .hover-content{
+            h4{
+                padding: 10px 0px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    //Blog Section
+    .blog-section{
+        .top-title,h2{
+            text-align: center;
+        }
+        .blog-arrow-icons{
+            justify-content: center;
+        }
+        .blog-card{
+            .card-title{
+                padding: 5px 0px;
+            }
+        }
+    }
+
+    //Contact Section
+    .contact-section{
+        .top-title,h2{
+            text-align: center;
+        }
+    }
+
+
+}
+
+//Mobile Device
+@media (max-width: 575.99px){
+    //Global Style
+
+    //Intro Section
+    .intro-section{
+
+        .intro-content{
+            text-align: center;
+
+            h1{
+                font-size: 50px;
+                line-height: 65px;
+            }
+            .intro-buttons{
+                justify-content: center;
+                padding-top: 20px;
+            }
+        }
+    }
+
+
+    //Service Section
+    .service-section{
+        
+        .card{
+            text-align: center;
+            margin: 15px 0px;
+        }
+    }
+
+    //Portfolio Section
+    .portfolio-section{
+        .portfolio-item-hover{
+            padding: 45px;
+        }
+    }
+
+    //Blog Section
+    .blog-section{
+        .blog-card{
+            text-align: center;
+
+            .card-title{
+                padding: 5px 0px;
+            }
+            .card-icon{
+                justify-content: center;
+            }
+        }
+    }
+}

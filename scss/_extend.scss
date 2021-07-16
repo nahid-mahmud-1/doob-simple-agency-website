@@ -1,0 +1,16 @@
+/* Global Extends */
+//Button
+%global-primary-button{
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 25px;
+    background: $primary-color;
+    border-color: $primary-color;
+}
+//Section padding
+%global-section-spacing{
+    @include section-spacing();
+}
+.btn-primary,.btn-danger{
+    @extend %global-primary-button;
+}

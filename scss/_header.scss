@@ -1,0 +1,58 @@
+/* Theme Main CSS */
+//Header Section
+header{
+    background: $section-bg;
+}
+.navbar{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .navbar-nav{
+        .nav-link{
+            color: $secondary-color;
+            font-weight: 600;
+            padding-right: 1rem;
+            padding-left: 1rem;
+
+            &:hover{
+                color: $primary-color;
+            }
+       }
+    }
+    .header-action-item{
+        display: flex;
+        align-items: center;
+
+        .nav{
+           a{
+               color: $secondary-color;
+               font-weight: 600;
+
+               &:hover{
+                   color: $primary-color;
+               }
+           } 
+        }
+        .btn-primary{
+            color: $primary-color;
+            background: $pure-white;
+            border-color: $pure-white;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-weight: 600;
+            @include global-box-shadow();
+
+            &::after{
+                content: "\f178";
+                font-family: fontAwesome;
+                position: relative;
+                left: 5px;
+            }
+            &:hover{
+                color: $pure-white;
+                border-color: $primary-color;
+                background: $primary-color;
+            }
+        }
+    }
+}

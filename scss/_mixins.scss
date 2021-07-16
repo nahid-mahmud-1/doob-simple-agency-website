@@ -1,0 +1,12 @@
+/* Global Mixins */
+//box-shadow
+@mixin global-box-shadow($x-axis: 1px, $y-axis: 8px, $blur: 10px, $color: #eee) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+//Section spacing
+@mixin section-spacing($top: 80px, $bottom: 80px, $left: 0px, $right: 0px) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}

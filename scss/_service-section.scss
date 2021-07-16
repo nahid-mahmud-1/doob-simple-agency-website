@@ -1,0 +1,36 @@
+/* Service Section */
+.service-section{
+    background: $section-bg url(../img/section-left-bg-01.png) no-repeat left;
+    background-size: contain;
+    @extend %global-section-spacing;
+
+    h2{
+        line-height: 52px;
+    }
+    .desktop-button{
+        display: block;
+    }
+    .mobile-button{
+        display: none;
+    }
+    .btn-danger{
+        margin-top: 30px;
+    }
+}
+.service-card{
+    padding: 30px;
+    @include global-box-shadow();
+    background: $pure-white;
+    border-color: $soft-white;
+    transition: 0.15s ease-in-out;
+
+    &:hover{
+        @include global-box-shadow(0, 0, 0, #eee)
+    }
+
+    h5{
+        padding: 20px 0px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+}
