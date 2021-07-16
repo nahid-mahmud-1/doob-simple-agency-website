@@ -13,7 +13,7 @@
   border-color: #ff3946;
 }
 
-.portfolio-section, .about-section, .service-section, .intro-section {
+.blog-section, .portfolio-section, .about-section, .service-section, .intro-section {
   padding-top: 80px;
   padding-bottom: 80px;
   padding-left: 0px;
@@ -60,6 +60,34 @@ ul {
 
 a {
   font-family: "Work Sans", sans-serif;
+}
+
+.top-title {
+  color: #ff3946;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.arrow-icons {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.arrow-icons a {
+  color: #d0d0d0;
+  text-decoration: none;
+  display: inline-block;
+}
+.arrow-icons i {
+  transition: 0.15s ease-in-out;
+}
+.arrow-icons i:hover {
+  color: #ff3946;
+}
+.arrow-icons .fa-long-arrow-right {
+  color: #314584;
+  font-size: 22px;
+  margin-left: 15px;
 }
 
 /* Theme Main CSS */
@@ -162,17 +190,18 @@ header {
 .service-section .btn-danger {
   margin-top: 30px;
 }
-.service-section .card {
+
+.service-card, .blog-card {
   padding: 30px;
   box-shadow: 1px 8px 10px #eee;
   background: #fff;
   border-color: #f1eded;
   transition: 0.15s ease-in-out;
 }
-.service-section .card:hover {
+.service-card:hover, .blog-card:hover {
   box-shadow: 0 0 0 #eee;
 }
-.service-section .card h5 {
+.service-card h5, .blog-card h5 {
   padding: 20px 0px;
   line-height: 30px;
   margin-bottom: 0px;
@@ -183,35 +212,8 @@ header {
   background: #fff url(../img/section-right-bg-01.png) no-repeat right;
   background-size: contain;
 }
-.about-section .top-title {
-  color: #ff3946;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 .about-section p {
   padding-top: 30px;
-}
-
-.arrow-icons {
-  display: flex;
-  align-items: center;
-  padding-top: 10px;
-}
-.arrow-icons a {
-  color: #d0d0d0;
-  text-decoration: none;
-  display: inline-block;
-}
-.arrow-icons i {
-  transition: 0.15s ease-in-out;
-}
-.arrow-icons i:hover {
-  color: #ff3946;
-}
-.arrow-icons .fa-long-arrow-right {
-  color: #314584;
-  font-size: 22px;
-  margin-left: 15px;
 }
 
 /* Portfolio Section */
@@ -220,7 +222,7 @@ header {
   background-size: 60%;
 }
 
-.portfolio-section .arrow-icons {
+.porfolio-arrow-icons, .blog-section .blog-arrow-icons {
   padding: 20px 0px;
   justify-content: flex-end;
 }
@@ -270,6 +272,46 @@ header {
 }
 .portfolio-footer p {
   font-weight: 600;
+}
+.portfolio-footer p:hover {
+  cursor: pointer;
+}
+
+/* Blog Section */
+.blog-section {
+  background: #fff;
+}
+.blog-items-row {
+  padding-top: 2rem;
+}
+
+.blog-card .card-body .card-title {
+  font-size: 18px;
+}
+.blog-card .card-body .card-subtitle {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.blog-card .card-body .card-text {
+  padding-top: 20px;
+}
+.blog-card .card-body .card-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 10px 0px;
+}
+.blog-card .card-body .card-icon a {
+  color: #ff3946;
+  font-size: 25px;
+}
+.blog-card:hover {
+  background: #ff3946;
+  border-color: #ff3946;
+  cursor: pointer;
+}
+.blog-card:hover .card-title, .blog-card:hover .card-subtitle,
+.blog-card:hover .card-text, .blog-card:hover .card-icon a {
+  color: #fff !important;
 }
 
 /* Media Query For All devices */
