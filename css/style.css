@@ -1,17 +1,542 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 5 | @import "mxins";
- *   |         ^^^^^^^
- *   '
- *   scss\main.scss 5:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 5 \2502  @import \"mxins\";\d\a   \2502          ^^^^^^^\a   \2575 \a   scss\\main.scss 5:9  root stylesheet";
+@charset "UTF-8";
+/* Theme Variables */
+/* Theme Variables */
+/* Color */
+/* Font-Family */
+/*Font-Size*/
+/* Mixins */
+/* Global Mixins */
+/* Extend */
+/* Global Extends */
+.btn-primary, .btn-danger {
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 10px 25px;
+  background: #ff3946;
+  border-color: #ff3946;
 }
+
+.contact-section, .blog-section, .portfolio-section, .about-section, .service-section, .intro-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Global CSS */
+/* Theme Global CSS */
+body {
+  color: #6b717f;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #314584;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #314584;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul {
+  font-family: "Work Sans", sans-serif;
+}
+
+a {
+  font-family: "Work Sans", sans-serif;
+}
+
+.top-title {
+  color: #ff3946;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.arrow-icons {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.arrow-icons a {
+  color: #d0d0d0;
+  text-decoration: none;
+  display: inline-block;
+}
+.arrow-icons i {
+  transition: 0.15s ease-in-out;
+}
+.arrow-icons i:hover {
+  color: #ff3946;
+}
+.arrow-icons .fa-long-arrow-right {
+  color: #314584;
+  font-size: 22px;
+  margin-left: 15px;
+}
+
+/*Header*/
+/* Theme Main CSS */
+header {
+  background: #fff;
+}
+
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar .navbar-nav .nav-link {
+  color: #314584;
+  font-weight: 600;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #ff3946;
+}
+.navbar .header-action-item {
+  display: flex;
+  align-items: center;
+}
+.navbar .header-action-item .nav a {
+  color: #314584;
+  font-weight: 600;
+}
+.navbar .header-action-item .nav a:hover {
+  color: #ff3946;
+}
+.navbar .header-action-item .btn-primary {
+  color: #ff3946;
+  background: #fff;
+  border-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  box-shadow: 1px 8px 10px #eee;
+}
+.navbar .header-action-item .btn-primary::after {
+  content: "";
+  font-family: fontAwesome;
+  position: relative;
+  left: 5px;
+}
+.navbar .header-action-item .btn-primary:hover {
+  color: #fff;
+  border-color: #ff3946;
+  background: #ff3946;
+}
+
+/* Intro Section */
+/* Intro Section */
+.intro-section {
+  background: #fff url(../img/hero-illustration-img-bg.png) no-repeat right;
+  background-size: contain;
+}
+
+.intro-content h1 {
+  line-height: 80px;
+}
+.intro-content p {
+  padding: 20px 0px;
+}
+.intro-content .intro-buttons {
+  display: flex;
+  align-items: center;
+}
+.intro-content .intro-buttons .intro-optional-button {
+  color: #314584;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.intro-content .intro-buttons .intro-optional-button:hover {
+  color: #ff3946;
+}
+
+.intro-section .img-fluid {
+  position: relative;
+}
+
+/* Service Section */
+/* Service Section */
+.service-section {
+  background: #fff url(../img/section-left-bg-01.png) no-repeat left;
+  background-size: contain;
+}
+.service-section h2 {
+  line-height: 52px;
+}
+.service-section .desktop-button {
+  display: block;
+}
+.service-section .mobile-button {
+  display: none;
+}
+.service-section .btn-danger {
+  margin-top: 30px;
+}
+
+.service-card, .blog-card {
+  padding: 30px;
+  box-shadow: 1px 8px 10px #eee;
+  background: #fff;
+  border-color: #f1eded;
+  transition: 0.15s ease-in-out;
+}
+.service-card:hover, .blog-card:hover {
+  box-shadow: 0 0 0 #eee;
+}
+.service-card h5, .blog-card h5 {
+  padding: 20px 0px;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+/* About Section */
+/* About Section */
+.about-section {
+  background: #fff url(../img/section-right-bg-01.png) no-repeat right;
+  background-size: contain;
+}
+.about-section p {
+  padding-top: 30px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background: #fff url(../img/portfolio-section-bg.png) no-repeat left center;
+  background-size: 60%;
+}
+
+.porfolio-arrow-icons, .blog-section .blog-arrow-icons {
+  padding: 20px 0px;
+  justify-content: flex-end;
+}
+
+.portfolio-row {
+  margin-top: 20px;
+}
+
+.protfolio-item {
+  position: relative;
+}
+.protfolio-item img {
+  border-radius: 5px;
+}
+.protfolio-item .portfolio-item-hover {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgba(255, 57, 70, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.15s ease-in-out;
+}
+.protfolio-item .portfolio-item-hover .hover-content .portfolio-title,
+.protfolio-item .portfolio-item-hover .hover-content .portfolio-dsc {
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0px;
+}
+.protfolio-item:hover .portfolio-item-hover {
+  background: rgba(255, 57, 70, 0.9);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.portfolio-footer {
+  color: #ff3946;
+  padding: 30px 0px;
+  text-align: center;
+}
+.portfolio-footer p {
+  font-weight: 600;
+}
+.portfolio-footer p:hover {
+  cursor: pointer;
+}
+
+/* Blog Section */
+/* Blog Section */
+.blog-section {
+  background: #fff url(../img/blog-section-bg.png) no-repeat right center;
+  background-size: contain;
+}
+.blog-items-row {
+  padding-top: 2rem;
+}
+
+.blog-card .card-body .card-title {
+  font-size: 18px;
+}
+.blog-card .card-body .card-subtitle {
+  font-size: 14px;
+  padding-top: 10px;
+}
+.blog-card .card-body .card-text {
+  padding-top: 20px;
+}
+.blog-card .card-body .card-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 10px 0px;
+}
+.blog-card .card-body .card-icon a {
+  color: #ff3946;
+  font-size: 25px;
+}
+.blog-card:hover {
+  background: #ff3946;
+  border-color: #ff3946;
+  cursor: pointer;
+}
+.blog-card:hover .card-title, .blog-card:hover .card-subtitle,
+.blog-card:hover .card-text, .blog-card:hover .card-icon a {
+  color: #fff !important;
+}
+
+/* Contact Section */
+/* Contact Section */
+.contact-section {
+  background: #fff;
+}
+.contact-section .form-control {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+.contact-section .btn-danger {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+/* Footer Section */
+/* Footer Section */
+footer {
+  background: #314584;
+  padding: 50px 0px;
+}
+footer .footer-title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0rem;
+}
+footer .footer-title a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .nav .nav-link {
+  color: #fff;
+}
+footer .footer-copyright {
+  color: #f1eded;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 1rem 0rem;
+}
+
+.footer-social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.footer-social-box a {
+  color: #fff;
+  display: block;
+  margin: 0px 15px;
+  transition: 0.15s ease-in-out;
+}
+.footer-social-box a i {
+  font-size: 30px;
+}
+
+/* Media Query For All devices */
+/* Media Query For All devices */
+@media (max-width: 991.99px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  .navbar #main-menu {
+    padding-top: 20px;
+  }
+  .navbar .header-action-item {
+    display: none;
+  }
+
+  .service-section h2 {
+    line-height: 45px;
+  }
+  .service-section .card {
+    padding: 10px;
+  }
+
+  .about-section h2 {
+    line-height: 45px;
+  }
+  .about-section p {
+    padding-top: 20px;
+  }
+
+  .portfolio-section h2 {
+    line-height: 45px;
+  }
+  .portfolio-section .portfolio-item-hover {
+    padding: 15px;
+  }
+  .portfolio-section .hover-content h4 {
+    padding: 10px 0px;
+  }
+  .portfolio-section .hover-content p {
+    font-size: 14px;
+  }
+
+  .blog-section .blog-card {
+    padding: 12px;
+  }
+}
+@media (max-width: 767.99px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  .service-section, .about-section,
+.portfolio-section, .blog-section,
+.contact-section, footer {
+    padding: 35px 0px;
+  }
+
+  .intro-section {
+    text-align: center;
+  }
+  .intro-section h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  .intro-section .intro-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro-section .intro-buttons a {
+    display: block;
+  }
+  .intro-section .intro-buttons .intro-optional-button {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .service-section h2 {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .service-section .desktop-button {
+    display: none;
+  }
+  .service-section .mobile-button {
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  .about-content {
+    text-align: center;
+    padding: 3rem 0rem;
+  }
+
+  .arrow-icons {
+    justify-content: center;
+  }
+
+  .portfolio-section h2 {
+    text-align: center;
+  }
+  .portfolio-section .portfolio-item-hover {
+    padding: 20px;
+  }
+  .portfolio-section .hover-content h4 {
+    padding: 10px 0px;
+  }
+  .portfolio-section .hover-content p {
+    font-size: 14px;
+  }
+
+  .blog-section .top-title, .blog-section h2 {
+    text-align: center;
+  }
+  .blog-section .blog-arrow-icons {
+    justify-content: center;
+  }
+  .blog-section .blog-card .card-title {
+    padding: 5px 0px;
+  }
+
+  .contact-section .top-title, .contact-section h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 575.99px) {
+  .intro-section .intro-content {
+    text-align: center;
+  }
+  .intro-section .intro-content h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .intro-section .intro-content .intro-buttons {
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .service-section .card {
+    text-align: center;
+    margin: 15px 0px;
+  }
+
+  .portfolio-section .portfolio-item-hover {
+    padding: 45px;
+  }
+
+  .blog-section .blog-card {
+    text-align: center;
+  }
+  .blog-section .blog-card .card-title {
+    padding: 5px 0px;
+  }
+  .blog-section .blog-card .card-icon {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
