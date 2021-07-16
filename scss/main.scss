@@ -451,8 +451,13 @@ footer{
     }
 
     //Header Section
-    .header-action-item{
-        display: none;
+    .navbar{
+        #main-menu{
+            padding-top: 20px;
+        }
+        .header-action-item{
+            display: none;
+        }
     }
 
     //Service Section
@@ -510,6 +515,27 @@ footer{
      //Global Style
      h2{
         font-size: 32px;
+    }
+    //Intro Section
+    .intro-section{
+        text-align: center;
+        h1{
+            font-size: 55px;
+            line-height: 70px;
+        }
+        .intro-buttons{
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a{
+                display: block;
+            }
+
+            .intro-optional-button{
+                width: 100%;
+                padding-top: 10px;
+            }
+        }
     }
 
     //Service Section

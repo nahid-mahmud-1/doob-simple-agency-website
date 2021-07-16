@@ -377,7 +377,10 @@ footer .footer-copyright {
     font-size: 35px;
   }
 
-  .header-action-item {
+  .navbar #main-menu {
+    padding-top: 20px;
+  }
+  .navbar .header-action-item {
     display: none;
   }
 
@@ -415,6 +418,25 @@ footer .footer-copyright {
 @media (max-width: 767.99px) {
   h2 {
     font-size: 32px;
+  }
+
+  .intro-section {
+    text-align: center;
+  }
+  .intro-section h1 {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  .intro-section .intro-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro-section .intro-buttons a {
+    display: block;
+  }
+  .intro-section .intro-buttons .intro-optional-button {
+    width: 100%;
+    padding-top: 10px;
   }
 
   .service-section h2 {
