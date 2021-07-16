@@ -340,6 +340,10 @@ footer .footer-title {
   text-transform: uppercase;
   padding: 1rem 0rem;
 }
+footer .footer-title a {
+  color: #fff;
+  text-decoration: none;
+}
 footer .nav .nav-link {
   color: #fff;
 }
@@ -365,9 +369,6 @@ footer .footer-copyright {
 }
 .footer-social-box a i {
   font-size: 30px;
-}
-.footer-social-box a:hover {
-  color: #ff3946;
 }
 
 /* Media Query For All devices */

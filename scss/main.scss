@@ -393,6 +393,11 @@ footer{
         text-align: center;
         text-transform: uppercase;
         padding: 1rem 0rem;
+
+        a{
+            color: $pure-white;
+            text-decoration: none;
+        }
     }
 
     .nav{
@@ -421,10 +426,6 @@ footer{
         transition: 0.15s ease-in-out;
         i{
             font-size: 30px;
-        }
-
-        &:hover{
-            color: $primary-color;
         }
     }
 }
