@@ -317,7 +317,8 @@ header{
 
 /* Blog Section */
 .blog-section{
-    background: $section-bg;
+    background: $section-bg url(../img/blog-section-bg.png) no-repeat right center;
+    background-size: contain;
     @extend %global-section-spacing;
 
     .blog-arrow-icons{
@@ -365,6 +366,69 @@ header{
         cursor: pointer;
     }
 }
+
+/* Contact Section */
+.contact-section{
+    background: $section-bg;
+    @extend %global-section-spacing;
+
+    .form-control{
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+    }
+    .btn-danger{
+        display: block;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Footer Section */
+footer{
+    background: $secondary-color;
+    padding: 50px 0px;
+
+    .footer-title{
+        color: $pure-white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1rem 0rem;
+    }
+
+    .nav{
+        .nav-link{
+            color: $pure-white;
+        }
+    }
+    .footer-copyright{
+        color: $soft-white;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 1rem 0rem;
+    }
+}
+.footer-social-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+
+    a{
+        color: $pure-white;
+        display: block;
+        margin: 0px 15px;
+        transition: 0.15s ease-in-out;
+        i{
+            font-size: 30px;
+        }
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
 
 
 
