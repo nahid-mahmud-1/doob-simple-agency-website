@@ -170,7 +170,6 @@ header {
 
 .intro-section .img-fluid {
   position: relative;
-  left: 10%;
 }
 
 /* Service Section */
@@ -258,6 +257,7 @@ header {
 .protfolio-item .portfolio-item-hover .hover-content .portfolio-dsc {
   width: 100%;
   color: #fff;
+  margin-bottom: 0px;
 }
 .protfolio-item:hover .portfolio-item-hover {
   background: rgba(255, 57, 70, 0.9);
@@ -388,8 +388,24 @@ footer .footer-copyright {
     padding: 10px;
   }
 
+  .about-section h2 {
+    line-height: 45px;
+  }
   .about-section p {
     padding-top: 20px;
+  }
+
+  .portfolio-section h2 {
+    line-height: 45px;
+  }
+  .portfolio-section .portfolio-item-hover {
+    padding: 15px;
+  }
+  .portfolio-section .hover-content h4 {
+    padding: 10px 0px;
+  }
+  .portfolio-section .hover-content p {
+    font-size: 14px;
   }
 }
 @media (max-width: 767.99px) {
@@ -409,6 +425,28 @@ footer .footer-copyright {
     text-align: center;
     padding: 20px 0px;
   }
+
+  .about-content {
+    text-align: center;
+    padding: 3rem 0rem;
+  }
+
+  .arrow-icons {
+    justify-content: center;
+  }
+
+  .portfolio-section h2 {
+    text-align: center;
+  }
+  .portfolio-section .portfolio-item-hover {
+    padding: 20px;
+  }
+  .portfolio-section .hover-content h4 {
+    padding: 10px 0px;
+  }
+  .portfolio-section .hover-content p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 575.99px) {
   .intro-section .intro-content {
@@ -426,6 +464,10 @@ footer .footer-copyright {
   .service-section .card {
     text-align: center;
     margin: 15px 0px;
+  }
+
+  .portfolio-section .portfolio-item-hover {
+    padding: 45px;
   }
 }
 

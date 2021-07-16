@@ -200,7 +200,6 @@ header{
 
 .intro-section .img-fluid{
     position: relative;
-    left: 10%;
 }
 
 /* Service Section */
@@ -292,6 +291,7 @@ header{
             .portfolio-dsc{
                 width: 100%;
                 color: $pure-white;
+                margin-bottom: 0px;
             }
         }
     }
@@ -466,9 +466,36 @@ footer{
     }
 
     //About Section
-    .about-section p{
-        padding-top: 20px;
+    .about-section{
+        h2{
+            line-height: 45px;
+        }
+        p{
+            padding-top: 20px;
+        }
+        
     }
+
+    //Portfolio Section
+    .portfolio-section{
+        h2{
+            line-height: 45px;
+        }
+        .portfolio-item-hover{
+            padding: 15px;
+        }
+        .hover-content{
+            h4{
+                padding: 10px 0px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
 }
 
 //Small Device
@@ -494,6 +521,37 @@ footer{
             padding: 20px 0px;
         }
     }
+
+    //About Section
+    .about-content{
+        text-align: center;
+        padding: 3rem 0rem;
+    }
+    .arrow-icons{
+        justify-content: center;
+    }
+
+    //Portfolio Section
+    .portfolio-section{
+        h2{
+            text-align: center;
+        }
+
+        .portfolio-item-hover{
+            padding: 20px;
+        }
+        .hover-content{
+            h4{
+                padding: 10px 0px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
 }
 
 //Mobile Device
@@ -524,6 +582,13 @@ footer{
         .card{
             text-align: center;
             margin: 15px 0px;
+        }
+    }
+
+    //Portfolio Section
+    .portfolio-section{
+        .portfolio-item-hover{
+            padding: 45px;
         }
     }
 }
